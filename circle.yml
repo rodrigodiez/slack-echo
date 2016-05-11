@@ -9,7 +9,7 @@ dependencies:
     - docker --version
     - docker info
     - sudo pip install --upgrade docker-compose
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
     - docker build -t rodrigodiez/slack-echo:$CIRCLE_SHA1 .
 
 deployment:
