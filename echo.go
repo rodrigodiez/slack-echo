@@ -9,7 +9,7 @@ import (
 
 func echo(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
-	log.Println(r.Form.Get(command))
+	log.Println(r.Form.Get("command"))
 }
 
 func main() {
